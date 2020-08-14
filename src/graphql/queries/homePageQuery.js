@@ -52,6 +52,12 @@ export default gql`
         }
       }
     }
+    image: Page(page: 1, perPage: 1) {
+      media(sort: TRENDING_DESC) {
+        id
+        bannerImage
+      }
+    }
   }
   ${HomePageFragment}
 `;

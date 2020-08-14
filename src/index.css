@@ -144,3 +144,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.inactive {
+  display: none;
+}
+
+.active {
+  display: block;
+}
