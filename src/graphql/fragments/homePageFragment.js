@@ -17,7 +17,8 @@ export default gql`
     episodes
     duration
     coverImage {
-      medium
+      extraLarge
+      color
     }
     genres
     averageScore

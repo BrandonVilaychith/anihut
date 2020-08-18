@@ -42,7 +42,7 @@ export default gql`
         ...HomePageFragment
       }
     }
-    top100: Page(perPage: 5, page: 10) {
+    top100: Page(perPage: 10, page: 1) {
       media(type: ANIME, sort: SCORE_DESC) {
         ...HomePageFragment
         nextAiringEpisode {
@@ -52,9 +52,13 @@ export default gql`
         }
       }
     }
-    image: Page(page: 1, perPage: 1) {
+    image: Page(page: 1, perPage: 10) {
       media(sort: TRENDING_DESC) {
         id
+        title {
+          english
+          romaji
+        }
         bannerImage
       }
     }
